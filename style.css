@@ -1,0 +1,60 @@
+body
+{
+    background-color: #e9f5f7;
+}
+
+#kotak
+{
+    background-image: url(image/bg.png);
+    background-size: 337px 615px;
+    border-radius: 10px;
+    margin: 50px 500px;
+}
+#atas
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+#text
+{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    font-family: Minion Variable Concept;
+    color: #30352e;
+    font-size: 9px;
+}
+#gambar
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 100px;
+
+
+}
+
+#button
+{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.button
+{
+    background-color: #86a8bf;
+    font-size: 20px;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+a
+{
+    text-decoration: none;
+    color: #30352e;
+    font-family: Minion Variable Concept;
+    font-weight: bold;
+}

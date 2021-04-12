@@ -1,0 +1,19 @@
+body
+{
+    background-color: #e9f5f7;
+
+}
+
+#kontak
+{
+    background-color: white;
+    border-radius: 10px
+    margin 100px;
+}
+
+#gambar
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
