@@ -1,0 +1,31 @@
+body
+{
+    background-color: #ffeee3;
+
+}
+a
+{
+    text-decoration: none;
+}
+.bunga
+{
+    padding-top: 20px;
+    padding-left: 50px;
+
+}
+.navbar
+{
+    display: flex;
+    justify-content: left;
+}
+.menu
+{
+    display: flex;
+}
+#gallery p, #acara p
+{
+    color: #343830;
+    padding-top: 15px;
+    padding-left: 20px;
+    font-weight: bold;
+}

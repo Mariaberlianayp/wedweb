@@ -3,22 +3,9 @@ body
     background-color: #ffeee3;
 
 }
-#bunga
+a
 {
-    padding-top: 20px;
-    padding-left: 50px;
-
-}
-.navbar
-{
-    display: flex;
-}
-#gallery p
-{
-    color: #343830;
-    padding-top: 15px;
-    padding-left: 20px;
-    font-weight: bold;
+    text-decoration: none;
 }
 #judul p 
 {
@@ -32,7 +19,7 @@ body
 #judul
 {
     margin-bottom: -165px;
-    margin-top: -80px;
+    margin-top: -50px;
 }
 #judul2
 {
@@ -55,24 +42,33 @@ body
     padding-top: 100px;
 }
 
-
-.comingsoon h3
+.btn
 {
     display: flex;
     justify-content: center;
-    font-family: Merriweather;
-    font-size: 50px;
-    margin-top: -5px;
+    align-items: center;
+}
+.btn a
+{
+    
     color: #343830;
+    font-size: 20px;
+    font-family: Merriweather;
+    font-weight: bold;
+}
+.open
+{
+    background-color: #f5bca7;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
 }
 .count
 {
     display: flex;
     justify-content: center;
-    margin-top: -30px;
 }
 .count span
 {
     font-size: 100px;
 }
-
