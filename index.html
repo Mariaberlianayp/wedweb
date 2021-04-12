@@ -5,25 +5,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A & A</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="page.css">
 </head>
 <body>
-    <div id="kotak">
-        <div id="atas">
-            <img src="image/atas-8.png" width="250px">
+    <div class="navbar">
+        <div id="bunga">
+            <img src="image/2.png" width="50px" alt="bunga">
         </div>
-        <div id="text">
-            <h1>You are invited to the wedding of</h1>
-        </div>
-        <div id="gambar">
-            <img src="image/utama.png" width="300px">
-    
-        </div>
-        <div id="button">
-            <button class="button" >
-                <a href="page.html">Open invitation</a>
-            </button>
+        <div id="gallery">
+            <p>Gallery</p>
         </div>
     </div>
+
+    <div id="judul">
+        <p>Angga & Angel</p>
+    </div>
+    <div id="judul2">
+        <p>Angga & Angel</p>
+    </div>
+    <div id="gambar">
+        <img src="image/1.png" width="400px">
+
+    </div>
+    <div class="countdown">
+        <div class="flex-col-c-m p-l-15 p-r-15 p-t-50 p-b-120">
+            <div class="comingsoon">
+                <h3 class="l1-txt1 txt-center p-b-35 respon1">
+                    Coming Soon
+                </h3>
+
+            </div>
+            
+            <div class="flex-w flex-c cd100 respon2">
+                <div class="count">
+                    
+                    
+                    <div class="flex-col-c wsize1 m-b-30">
+                        <p class="l1-txt2 p-b-37 days">35</p>
+                        <p class="m1-txt2 p-r-20">Days</p>
+                    </div>
+        
+                    <p class="l1-txt2 p-t-15 dis-none-sm">:</p>
+                    <div class="flex-col-c wsize1 m-b-30">
+                        <p class="l1-txt2 p-b-37 hours">17</p>
+                        <p class="m1-txt2 p-r-20">Hr</p>
+                    </div>
+        
+                    <p class="l1-txt2 p-t-15 dis-none-lg">:</p>
+        
+                    <div class="flex-col-c wsize1 m-b-30">
+                        <p class="l1-txt2 p-b-37 minutes">50</p>
+                        <p class="m1-txt2 p-r-20">Min</p>
+                    </div>
+        
+                    <p class="l1-txt2 p-t-15 dis-none-sm">:</p>
+        
+                    <div class="flex-col-c wsize1 m-b-30">
+                        <p class="l1-txt2 p-b-37 seconds">39</p>
+                        <p class="m1-txt2 p-r-20">Sec</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+        <script src="vendor/bootstrap/js/popper.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+        <script src="vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+        <script src="vendor/countdowntime/moment.min.js"></script>
+        <script src="vendor/countdowntime/moment-timezone.min.js"></script>
+        <script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
+        <script src="vendor/countdowntime/countdowntime.js"></script>
+        <script>
+            $('.cd100').countdown100({
+                /*Set Endtime here*/
+                /*Endtime must be > current time*/
+                endtimeYear: 2021,
+                endtimeMonth: 7,
+                endtimeDate: 7,
+                endtimeHours: 10,
+                endtimeMinutes: 0,
+                endtimeSeconds: 0,
+                timeZone: "Asia/Indonesia" 
+                // ex:  timeZone: "America/New_York"
+                //go to " http://momentjs.com/timezone/ " to get timezone
+            });
+        </script>
+    <!--===============================================================================================-->
+        <script src="vendor/tilt/tilt.jquery.min.js"></script>
+        <script >
+            $('.js-tilt').tilt({
+                scale: 1.1
+            })
+        </script>
+    <!--===============================================================================================-->
+        <script src="js/main.js"></script>
+     
 </body>
 </html>

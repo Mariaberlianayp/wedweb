@@ -1,14 +1,51 @@
 body
 {
-    background-color: #e9f5f7;
+    background-color: #ffeee3;
 
 }
-
-#kontak
+#bunga
 {
-    background-color: white;
-    border-radius: 10px
-    margin 100px;
+    padding-top: 20px;
+    padding-left: 50px;
+
+}
+.navbar
+{
+    display: flex;
+}
+#gallery p
+{
+    color: #343830;
+    padding-top: 15px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+#judul p 
+{
+    color: #f5bca7;
+    font-family: Parisienne;
+    font-weight: bold;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+}
+#judul
+{
+    margin-bottom: -165px;
+    margin-top: -80px;
+}
+#judul2
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: -100px;
+    font-size: 40px;
+}
+#judul2 p
+{
+    
+    font-family: Merriweather;
+    color: #343830;
 }
 
 #gambar
@@ -17,3 +54,25 @@ body
     justify-content: center;
     padding-top: 100px;
 }
+
+
+.comingsoon h3
+{
+    display: flex;
+    justify-content: center;
+    font-family: Merriweather;
+    font-size: 50px;
+    margin-top: -5px;
+    color: #343830;
+}
+.count
+{
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+}
+.count span
+{
+    font-size: 100px;
+}
+
