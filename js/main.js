@@ -1,79 +1,38 @@
+let launchDate = new Date("Aug 7, 2021 10:00:00").getTime();
 
-(function ($) {
-    "use strict";
+// Setup Timer to tick every 1 second
+let timer = setInterval(tick, 1000);
 
-    /*==================================================================
-    [ Validate ]*/
-    var input = $('.validate-input .input100');
+function tick () {
+  // Get current time
+  let now = new Date().getTime();
+  // Get the difference in time to get time left until reaches 0
+  let t = launchDate - now;
 
-    $('.validate-form').on('submit',function(){
-        var check = true;
-
-        for(var i=0; i<input.length; i++) {
-            if(validate(input[i]) == false){
-                showValidate(input[i]);
-                check=false;
-            }
-        }
-
-        return check;
-    });
-
-
-    $('.validate-form .input100').each(function(){
-        $(this).focus(function(){
-           hideValidate(this);
-        });
-    });
-
-    function validate (input) {
-        if($(input).attr('type') == 'email' || $(input).attr('name') == 'email') {
-            if($(input).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
-                return false;
-            }
-        }
-        else {
-            if($(input).val().trim() == ''){
-                return false;
-            }
-        }
-    }
-
-    function showValidate(input) {
-        var thisAlert = $(input).parent();
-
-        $(thisAlert).addClass('alert-validate');
-    }
-
-    function hideValidate(input) {
-        var thisAlert = $(input).parent();
-
-        $(thisAlert).removeClass('alert-validate');
-    }
-
+  // Check if time is above 0
+  if (t > 0) {
+    // Setup Days, hours, seconds and minutes
+    // Algorithm to calculate days...
+    let days = Math.floor(t / (1000 * 60 * 60 * 24));
+    // prefix any number below 10 with a "0" E.g. 1 = 01
+    if (days < 10) { days = "0" + days; }
     
-    
-    /*==================================================================
-    [ Simple slide100 ]*/
+    // Algorithm to calculate hours
+    let hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    if (hours < 10) { hours = "0" + hours; }
 
-    $('.simpleslide100').each(function(){
-        var delay = 7000;
-        var speed = 1000;
-        var itemSlide = $(this).find('.simpleslide100-item');
-        var nowSlide = 0;
+    // Algorithm to calculate minutes
+    let mins = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+    if (mins < 10) { mins = "0" + mins; }
 
-        $(itemSlide).hide();
-        $(itemSlide[nowSlide]).show();
-        nowSlide++;
-        if(nowSlide >= itemSlide.length) {nowSlide = 0;}
+    // Algorithm to calc seconds
+    let secs = Math.floor((t % (1000 * 60)) / 1000);
+    if (secs < 10) { secs = "0" + secs; }
 
-        setInterval(function(){
-            $(itemSlide).fadeOut(speed);
-            $(itemSlide[nowSlide]).fadeIn(speed);
-            nowSlide++;
-            if(nowSlide >= itemSlide.length) {nowSlide = 0;}
-        },delay);
-    });
+    // Create Time String
+    let time = `${days} : ${hours} : ${mins} : ${secs}`;
 
-
-})(jQuery);
+    // Set time on document
+    document.querySelector('.countdown').innerText = time;
+  }
+}

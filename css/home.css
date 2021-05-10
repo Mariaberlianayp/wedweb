@@ -38,6 +38,13 @@ a
     padding-bottom: 20px;
     border-radius: 20px;
 }
+
+.head{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Dancing Script';
+}
+
 .satu
 {
     display: flex;
@@ -61,8 +68,8 @@ a
 }
 #namasatu, #namadua
 {
-    font-family:Merriweather ;
-    font-size: 50px;
+    font-family:'Sacramento' ;
+    font-size: 60px;
     margin-top: -20px;
     margin-bottom: -30px;
     
@@ -83,12 +90,19 @@ a
     margin-top: 5px;
 }
 
+.dan{
+    text-align:center; 
+    font-family:Sacramento;
+    font-size: 30px;
+}
+
 .dua
 {
     display: flex;
     margin-top: 30px;
     justify-content: right;
     margin-bottom: 30px;
+    margin-left: 305px;
 }
 #fotosatu img, #fotodua img
 {
