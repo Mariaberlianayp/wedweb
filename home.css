@@ -29,3 +29,90 @@ a
     padding-left: 20px;
     font-weight: bold;
 }
+.content
+{
+    margin: 35px 150px;
+    background-color: #fbdacb;
+    background-blend-mode: color-burn;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+.satu
+{
+    display: flex;
+    margin-top: 30px;
+}
+
+#fotosatu img
+{
+    border-radius: 50%;
+    border-color: #f4af9a ;
+    border-style: double;
+    margin-left: 50px;
+    border-width: 5px;
+    box-shadow: 0 1px 10px gray ;
+    
+}
+
+#keterangansatu
+{
+    padding-left: 50px;
+}
+#namasatu, #namadua
+{
+    font-family:Merriweather ;
+    font-size: 50px;
+    margin-top: -20px;
+    margin-bottom: -30px;
+    
+}
+#namasatu p, #namadua p
+{
+    color: #343830;
+}
+#line
+{
+    margin-top: -55px;
+    margin-left: -10px;
+}
+#putra, #bapaksatu, #ibusatu
+{
+    font-family: Merriweather;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.dua
+{
+    display: flex;
+    margin-top: 30px;
+    justify-content: right;
+    margin-bottom: 30px;
+}
+#fotosatu img, #fotodua img
+{
+    border-radius: 50%;
+    border-color: #f4af9a ;
+    border-style: double;
+    margin-right: 50px;
+    border-width: 5px;
+    box-shadow: 0 1px 10px gray ;
+    
+}
+
+#keterangandua
+{
+    margin-right: 85px;
+}
+#putri, #bapakdua, #ibudua
+{
+    font-family: Merriweather;
+    font-size: 15px;
+    margin-top: 5px;
+}
+div#keterangandua
+{
+  
+    text-align: right;
+}
