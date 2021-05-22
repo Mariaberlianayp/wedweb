@@ -31,8 +31,15 @@ function tick () {
 
     // Create Time String
     let time = `${days} : ${hours} : ${mins} : ${secs}`;
-
+    let cd = `${days}`;
+    let ch = `${hours}`;
+    let cm = `${mins}`;
+    let cs = `${secs}`;
     // Set time on document
-    document.querySelector('.countdown').innerText = time;
+      //document.querySelector('.countdown').innerText = time;
+    document.querySelector('.cd').innerText = cd;
+    document.querySelector('.ch').innerText = ch;
+    document.querySelector('.cm').innerText = cm;
+    document.querySelector('.cs').innerText = cs;
   }
 }

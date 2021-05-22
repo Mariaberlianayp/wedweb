@@ -63,6 +63,15 @@ a
     padding: 15px;
     border-radius: 10px;
 }
+.open :hover
+{
+    opacity: 80%;
+}
+.open :active
+{
+    opacity: 50%;
+}
+
 .count
 {
     display: flex;
@@ -72,3 +81,22 @@ a
 {
     font-size: 100px;
 }
+.content
+{
+    padding-bottom: 50px;
+}
+
+@media(max-width:670px)
+{
+    #judul p
+    {
+        font-size: 50px;
+        padding-top: 30px;
+    }
+    #judul2 p
+    {
+        margin-top: 70px;
+    }
+}
+
+

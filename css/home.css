@@ -42,13 +42,15 @@ a
 .head{
     text-align: center;
     font-size: 30px;
-    font-family: 'Dancing Script';
+    font-family: 'Parisienne';
+    color: #343830;
 }
 
 .satu
 {
     display: flex;
     margin-top: 30px;
+    margin-bottom: -30px;
 }
 
 #fotosatu img
@@ -68,16 +70,26 @@ a
 }
 #namasatu, #namadua
 {
-    font-family:'Sacramento' ;
+    font-family:'Parisienne' ;
     font-size: 60px;
     margin-top: -20px;
     margin-bottom: -30px;
     
 }
-#namasatu p, #namadua p
+#namasatu p
 {
     color: #343830;
+    margin-bottom: -20px;
+    margin-left: 18px;
 }
+#namadua p
+{
+    margin-bottom: -20px;
+    color: #343830;
+    margin-right: 14px;
+}
+
+
 #line
 {
     margin-top: -55px;
@@ -88,21 +100,23 @@ a
     font-family: Merriweather;
     font-size: 15px;
     margin-top: 5px;
+    margin-left: 30px;
 }
 
 .dan{
     text-align:center; 
-    font-family:Sacramento;
-    font-size: 30px;
+    font-family:Parisienne;
+    font-size: 50px;
+    font-weight: bold;
+    color: #343830;
 }
 
 .dua
 {
     display: flex;
-    margin-top: 30px;
+    margin-top: -10px;
     justify-content: right;
     margin-bottom: 30px;
-    margin-left: 305px;
 }
 #fotosatu img, #fotodua img
 {
@@ -124,9 +138,155 @@ a
     font-family: Merriweather;
     font-size: 15px;
     margin-top: 5px;
+    padding-right: 30px;
 }
 div#keterangandua
 {
   
     text-align: right;
+}
+
+@media(max-width:1000px)
+{
+    
+    .content
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .head
+    {
+        
+        font-size: 30px;
+    }
+    #keterangansatu
+    {
+        margin-left: -70px;
+    }
+
+    #fotosatu img
+    {
+        width: 200px;
+        margin-left: 35px;
+    }
+    #namasatu, #namadua
+    {
+        font-size: 40px;
+        
+    }
+    #namasatu img
+    {
+        width: 320px;
+        margin-left: 5px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    #putra, #bapaksatu, #ibusatu
+    {
+        
+        font-size: 15px;
+    }
+    .dan
+    {
+        margin-top: 50px;
+        font-size: 30px;
+    }
+
+    /* foto 2 */
+    .dua
+    {
+        margin-top: 30px;
+    }
+    #fotodua img
+    {
+        width: 200px;
+        margin-right: 35px;
+        margin-left: -60px;
+    }
+    #namadua img
+    {
+        width: 280px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    #putri, #bapakdua, #ibudua
+    {
+        font-size: 15px;
+        margin-right: -10px;
+    }
+
+
+}
+
+
+
+@media(max-width:670px)
+{
+    .content
+    {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .head
+    {
+        
+        font-size: 20px;
+    }
+    #keterangansatu
+    {
+        margin-left: -110px;
+    }
+
+    #fotosatu img
+    {
+        width: 110px;
+        margin-left: 15px;
+    }
+    #namasatu, #namadua
+    {
+        font-size: 22px;
+        
+    }
+    #namasatu img
+    {
+        width: 170px;
+        margin-left: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #putra, #bapaksatu, #ibusatu
+    {
+        
+        font-size: 10px;
+    }
+    .dan
+    {
+        margin-top: 30px;
+        font-size: 20px;
+    }
+
+    /* foto 2 */
+    .dua
+    {
+        margin-top: 20px;
+    }
+    #fotodua img
+    {
+        width: 110px;
+        margin-right: 11px;
+        margin-left: -80px;
+    }
+    #namadua img
+    {
+        width: 160px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        margin-right: 2px;
+    }
+    #putri, #bapakdua, #ibudua
+    {
+        font-size: 10px;
+        margin-right: -10px;
+    }
+
 }
