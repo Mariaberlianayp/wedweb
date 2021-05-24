@@ -45,6 +45,7 @@ a
 {
     width: 400px;
     height: auto;
+    object-fit: cover;
 }
 
 .btn
