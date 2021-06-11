@@ -7,6 +7,7 @@
     <link rel="icon" href="images/2.png">
     <title>A & A</title>
     <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/form.css">
     <link href='https://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet'>
     <link rel="stylesheet" href="https://www.w3schools.com/howto/tryit.asp?font=Merriweather">
     <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
@@ -33,9 +34,32 @@
 
         </div>
     </div>
+
+    <div class="sampul">
+        <div class="sampul-photo-box">
+            <div class="photo-box">
+                <img src="" alt="">
+                <div class="photo-box-content">
+                    <div class="content-box">
+                        <div class="col-md-12 content">
+                            <label>
+                                <h3>The Wedding of</h3>
+                                <h3>Angga &amp; Angel</h3>
+                            </label>
+                            <label class="date">07.08.2021</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="content">
         <div class="head">
             <h1>The Wedding Of</h1>
+            <p>
+                Tuhan membuat segala sesuatu indah pada waktunya.
+                Indah pada saat Dia mempertemukan, indah saat Dia menumbuhkan kasih, dan indah saat Dia mempersatukan dua insan dalam Pernikahan Kudus.</p>
         </div>
         <div class="satu">
             <div id="fotosatu">
@@ -51,10 +75,10 @@
                     Putra ketiga
                 </div>
                 <div id="bapaksatu">
-                    Bapak ...
+                    Bapak Filipus Sutarmo dan
                 </div>
                 <div id="ibusatu">
-                    Ibu ...
+                    Ibu Theresia Tri Wuryani
                 </div>        
             </div>               
         </div>
@@ -64,7 +88,7 @@
         <div class="dua">        
             <div id="keterangandua">
                 <div id="namadua">
-                    <p>Teresia Angelia</p> 
+                    <p>Teresia Angelia Kusumahadi</p> 
                     <img src="images/line boarder.png" width="400px">
                 </div>
                 
@@ -72,7 +96,7 @@
                     Putri pertama
                 </div>
                 <div id="bapakdua">
-                    Bapak Herman Kusumahadi
+                    Bapak Herman Kusumahadi dan
                 </div>
                 <div id="ibudua">
                     Ibu Indahwati
@@ -84,6 +108,50 @@
             </div>
         </div>
     </div>
+    <div class="rangkaian">
+        <div class="col-md-12 content">
+            <p>Dengan segala kerendahan hati dan dengan ungkapan syukur atas karunia Tuhan,  kami bermaksud menyelenggarakan pemberkatan pernikahan putra-putri kami yang akan diselenggarakan pada:</p>
+            <div>
+                <div>
+                    <div>Sabtu 10.00 WIB</div>
+                    <div>07</div>
+                    <div>Agustus 2021</div>
+                </div>
+                <div>
+                    <h3>Gereja Hati Kudus Kramat</h3>
+                    <h3>Jakarta Pusat</h3>  
+                </div>
+            </div>
+            <p>Berkenaan dengan situasi pandemi Covid-19 saat ini, kami menyampaikan permohonan maaf tidak dapat mengundang Bapak, Ibu, Saudara/i, Sahabat dan Teman-teman untuk menghadiri secara langsung pemberkatan pernikahan ini.</p>
+        </div>
+    </div>
 
+    <div class="streaming">
+        <div class="col-md-12 content">
+            video streaming youtube   
+        </div>
+    </div>
+
+    <div class="ucapan">
+        <div class="col-md-12 content">
+            <h2>Kirim Ucapan dan Doa</h2>
+            <div>
+                <form method="post" action="./php/send.php">
+                    <label>Name:</label>
+                    <input type="text" 
+                           name="name">
+                
+                    <label>Message:</label>
+                    <textarea name="message"></textarea>
+            
+                    <input type="submit" 
+                           name="btn">
+                </form>
+            </div>
+            <div>
+                untuk up video
+            </div>
+        </div>
+    </div>
 </body>
 </html>
