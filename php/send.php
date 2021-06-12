@@ -18,11 +18,10 @@ if (isset($_POST['name']) && isset($_POST['message'])) {
 		header("Location: ../home.html");
 	}else {
 
-		$sql = "INSERT INTO test(name, message) VALUES('$name', '$message')";
+		$sql = "INSERT INTO ucapan(name, message) VALUES('$name', '$message')";
 		$res = mysqli_query($conn, $sql);
 
 		if ($res) {
-			echo "Your message was sent successfully!";
             header("Location: ../success.html");
 		}else {
 			echo "Your message could not be sent!";
