@@ -67,7 +67,7 @@ a
 .head
 {
     text-align: center;
-    font-size: 1.2vw;
+    font-size: 16px;
     margin: 20px 100px;
     color: #343830;
     padding: 0px 50px;
@@ -91,7 +91,7 @@ a
 #namasatu, #namadua
 {
     font-family:'Parisienne' ;
-    font-size: 2.5vw;
+    font-size: 35px;
     font-weight: bolder;
     text-align: center;
     
@@ -133,11 +133,7 @@ a
 }
 
 /* PEMBERKATAN */
-.pemberkatan p
-{
-    font-size: 1.2vw;
-    color: #343830;
-}
+
 .rangkaian
 {
     display: flex;
@@ -148,6 +144,7 @@ a
 {
     font-size: 15px;
     text-align: center;
+    color: #343830;
 }
 .keteranganrangkaian
 {
@@ -206,12 +203,13 @@ a
     text-decoration-color: #7f5923;
     color: #7f5923;
 }
-.jampemberkatan
+.jampemberkatan p
 {
-    margin: 20px 15px;
+    margin: 33px 15px;
     text-decoration: overline underline;
     text-decoration-color: #7f5923;
     color: #7f5923;
+    font-size: 20px;
 }
 .tanggalpemberkatan .bulan
 {
@@ -259,7 +257,7 @@ a
 {
     margin-top: 50PX;
     text-align: center;
-    font-size: 1.2vw;
+    font-size: 15px;
     color: #343830;
 }
 .videostreaming img 
@@ -351,15 +349,214 @@ a
     background:#ffeee3; 
     padding:0 10px; 
 }
+.keteranganucapan
+{
+    margin-top: 50PX;
+    text-align: center;
+    font-size: 15px;
+    color: #343830;
+
+}
+
+.ucapan h2
+{
+    font-family:Parisienne;
+    color: #343830;
+    font-size: 30px;
+}
 
 
+.form form input[type=submit]
+{
+    background-color: #f4af9a;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size:16px;
+    font-weight: bold;
+    line-height: 1.4;
+    padding: 10px;
+    width: 100px;
+}
+.form form input[type=text], .form form textarea
+{
+    
+    padding:10px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius: 10px;
+}
+.form form textarea
+{
+    margin-bottom: 20px;
+}
 
+.kirimvideo p
+{
+    margin-top: 50PX;
+    text-align: center;
+    font-size: 15px;
+    color: #343830;
+}
+.kirimvideo form 
+{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.kirimvideo input[type=submit]
+{
+   
+    padding:10px 0; 
+    background:#f4af9a; 
+    border-radius: 10px; 
+    
+}
+
+.ayat, .penutup
+{
+    margin-top: 50PX;
+    text-align: center;
+    font-size: 12px;
+    color: #343830;
+}
+.ayat #alkitab
+{
+    font-family:Parisienne;
+    font-size: 20px;
+    font-weight: bold;
+    color: #7f5923;
+}
 
 @media(max-width:1050px)
 {
-    
-    
+    .content
+    {
+        margin: 20px 50px;
+    }
 
+    /* KELUARGA */
+    .keluarga
+    {
+        padding: 20px 0;
+        background-size: 650px 630px;
+    }
+    .head
+    {
+        font-size: 12px;
+        margin: 20px 50px;
+        padding: 0px 20px;
+        margin-bottom: 20px;
+    }
+
+    #fotosatu img, #fotodua img
+    {
+        margin: 5px 10px;
+        max-width: 150px;
+        
+    }
+
+    #namasatu, #namadua
+    {
+        font-size: 25px;
+        
+    }
+    #namasatu p , #namadua p
+    {
+        margin: 0 10px;
+    }
+    #namasatu img, #namadua img
+    {
+        margin-top: -20px;
+        margin-bottom: -20px;
+        max-width: 350px;
+    }
+  
+    .satukeluarga , .duakeluarga
+    {
+        margin: 0 30px;
+        color: #343830;
+        font-size: 10px;
+    }
+    #keterangansatu , #keterangandua
+    {
+        margin-top: 30px;
+    }
+    .dan{
+        font-size: 30px;
+        
+    }
+    .dua
+    {
+        margin-bottom: 25px;
+    }
+
+    /* PEMBERKATAN */
+    
+    .rangkaian p
+    {
+        font-size: 13px;
+    }
+    .fotorangkaian img{
+        width: 300px;
+    }
+    .fotorangkaian
+    {
+        padding: 10px 30px;
+
+    }
+    .pemberkatanjudul h1
+    {
+        
+        font-size: 40px;
+       
+    }
+    .tempat
+    {
+        padding: 10px 20px;
+        
+    }
+    /* VIDEO STREAMING */
+    
+    .judulstreaming h1
+    {
+        font-size: 40px;
+    }
+    .keteranganstreaming
+    {
+        margin-top: 40PX;
+        font-size: 13px;
+    }
+    /* GALLERY */
+    
+    .judulGallery h1
+    {
+        
+        font-size: 40px;
+        
+    }
+
+    /* UCAPAN DAN DOA */
+    
+    .judulucapan h1
+    {
+        font-size: 40px;
+    }
+    .keteranganucapan
+    {
+        font-size: 13px;
+    }
+    .ucapan h2
+    {
+        font-family:Parisienne;
+        color: #343830;
+        font-size: 25px;
+    }
+    .kirimvideo p
+    {
+        font-size: 13px;
+    }
 
 }
 
@@ -367,6 +564,212 @@ a
 
 @media(max-width:670px)
 {
+    .content
+    {
+        margin: 10px 10px;
+    }
+
+    /* KELUARGA */
+    .keluarga
+    {
+        padding: 10px 0;
+        background-size: 290px 320px;
+    }
+    .head
+    {
+        font-size: 7px;
+        margin: 10px 30px;
+        padding: 0px 30px;
+        margin-bottom: 0px;
+    }
+
+    #fotosatu img, #fotodua img
+    {
+        margin: 5px 0px;
+        max-width: 80px;
+        box-shadow: 0 1px 3px gray ;
+        
+    }
+
+    #namasatu, #namadua
+    {
+        font-size: 12px;
+        
+    }
+    #namasatu p , #namadua p
+    {
+        margin: 0 0px;
+    }
+    #namasatu img, #namadua img
+    {
+        margin-top: -20px;
+        margin-bottom: -10px;
+        max-width: 150px;
+    }
+  
+    .satukeluarga , .duakeluarga
+    {
+        margin: 0 15px;
+        color: #343830;
+        font-size: 7px;
+    }
+    #keterangansatu , #keterangandua
+    {
+        margin-top: 15px;
+    }
+    .dan{
+        font-size: 10px;
+        
+    }
+    .dua
+    {
+        margin-bottom: 5px;
+    }
+
+    /* PEMBERKATAN */
     
+    .rangkaian p
+    {
+        font-size: 7px;
+    }
+    .fotorangkaian img{
+        width: 150px;
+        box-shadow: -2px -2px 3px gray;
+    }
+    .fotorangkaian
+    {
+        padding: 10px 10px;
+
+    }
+    .pemberkatanjudul h1
+    {
+        
+        font-size: 30px;
+    }
+    .tempat
+    {
+        padding: 10px 0px;
+        
+    }
+    .tempat h1
+    {
+        font-size: 15px;
+    }
+    .haripemberkatan 
+    {
+        margin: 20px 5px;
+        font-size: 7px;
+    }
+    .jampemberkatan p
+    {
+        margin: 19px 0px;
+        font-size: 7px;
+        margin-left: 5px;
+
+    }
+    .tanggalpemberkatan .bulan
+    {
+        font-size: 5px;
+    }
+
+    .tanggalpemberkatan .tanggal
+    {
+        font-size: 20px;
+        margin-top: -2px;
+    }
+
+    .tanggalpemberkatan .tahun
+    {
+        font-size: 10px;
+        margin-top: -2px;
+        color: #7f5923;
+    }
+
+    /* VIDEO STREAMING */
+    
+    .judulstreaming h1
+    {
+        font-size: 20px;
+    }
+    .keteranganstreaming
+    {
+        margin-top: 20PX;
+        font-size: 7px;
+    }
+    /* GALLERY */
+    
+    .judulGallery h1
+    {
+        
+        font-size: 30px;
+        
+    }
+    .btngallery
+    {
+        margin-top: 5px;
+    }
+    .btngallery a
+    {
+        font-size: 10px;
+    }
+    .open
+    {
+        padding: 10px;
+    }
+
+    /* UCAPAN DAN DOA */
+    
+    .judulucapan h1
+    {
+        font-size: 30px;
+    }
+    .keteranganucapan
+    {
+        margin-top: 3px;
+        font-size: 7px;
+    }
+    .ucapan h2
+    {
+        font-size: 15px;
+    }
+
+    .form
+    {
+        font-size: 10px;
+    }
+    .form input[type=text]
+    {
+        width: 200px;
+        height: 10px;
+    }
+    .form textarea
+    {
+        width: 200px;
+        height: 30px;
+    }
+    .form form input[type=submit]
+    {
+        font-size: 10px;
+        width: 70px;
+        height: 40px;
+    }
+    .kirimvideo p
+    {
+        font-size: 7px;
+    }
+    .kirimvideo input
+    {
+        font-size: 10px;
+        width: 100px;
+    }
+    .ayat, .penutup
+    {
+        font-size: 7px;
+    }
+    .ayat #alkitab
+    {
+       
+        font-size: 7px;
+    }
 
 }

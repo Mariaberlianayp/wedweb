@@ -13,9 +13,6 @@
     <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet'>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
     <div class="navbar">
@@ -124,7 +121,7 @@
                                 <div class="tahun">2021</div>
                             </div>
                             <div class="jampemberkatan">
-                                <p>10.00 WIB</p>
+                                <p>10.00</p>
                             </div>
                         </div>
                         
@@ -165,16 +162,16 @@
     </div>
 
     <!-- carousel container start here -->
-    <div>
+    <!-- <div>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
+            Indicators
             <ol class="carousel-indicators">
               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
               <li data-target="#myCarousel" data-slide-to="1"></li>
               <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
         
-            <!-- Wrapper for slides -->
+            Wrapper for slides
             <div class="carousel-inner">
               <div class="item active">
                 <img src="images/gallery/1.jpg" style="width:33%;height: 350px;">
@@ -195,7 +192,7 @@
               </div>
             </div>
         
-            <!-- Left and right controls -->
+            Left and right controls
             <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="background: transparent;color: #fff;">
               <span class="glyphicon glyphicon-chevron-left" ></span>
               <span class="sr-only">Previous</span>
@@ -205,7 +202,7 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-    </div>
+    </div> -->
 
     <div class="ucapan content">
         <div class="judulucapan">
@@ -215,6 +212,8 @@
             Merupakan suatu kebahagiaan bagi kami apabila Bapak, Ibu, Saudara/i, Sahabat dan Teman-teman terkasih dapat menghadiri pemberkatan pernikahan secara virtual. Kami juga mengucapkan terima kasih atas doa restu yang diberikan kepada mempelai dan keluarga.
         </div>
         <h2>Kirim Ucapan dan Doa</h2>
+        
+        
         <div class="form">
             <form method="post" action="./php/send.php">
                 <label>Name:</label>
@@ -223,17 +222,21 @@
             
                 <label>Message:</label>
                 <textarea name="message"></textarea>
-        
-                <input type="submit" value="Submit" name="btn">
+                
+                <input  type="submit" value="Submit" name="btn" >
 
             </form>
         </div>
         <div class="kirimvideo">
             <p>Apabila Bapak, Ibu, Saudara/i, Sahabat dan Teman-teman berkenan menyampaikan Video Ucapan, video mohon dapat di-upload melalui tombol dibawah</p>
+            <form action="https://drive.google.com/drive/folders/1sO14PNeiVF04r46g6dc4zENnoYhzOaOs?usp=sharing">
+                <input type="submit" value="Submit Video" />
+            </form>
+            
         </div>
         <div class="ayat">
             <p>"Demikianlah mereka bukan lagi dua, melainkan satu. Karena itu, apa yang telah dipersatukan Allah, tidak boleh diceraikan manusia." </p>
-            <p>(Matius 19:6)</p>
+            <p id="alkitab">(Matius 19:6)</p>
 
         </div>
         <div class="penutup">
