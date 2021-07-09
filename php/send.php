@@ -22,7 +22,8 @@ if (isset($_POST['name']) && isset($_POST['message'])) {
 		$res = mysqli_query($conn, $sql);
 
 		if ($res) {
-            header("Location: ../success.html");
+			// echo '<script>alert("Thank you for send a message :)")</script>';
+            // header("Location: ../home.html");
 		}else {
 			echo "Your message could not be sent!";
 		}

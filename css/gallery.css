@@ -1,0 +1,46 @@
+body
+{
+    background-color: #ffeee3;
+    font-family:Merriweather;
+}
+a
+{
+    text-decoration: none;
+}
+
+.content
+{
+    margin: 35px 150px;
+}
+
+.bunga
+{
+    padding-top: 20px;
+    padding-left: 50px;
+
+}
+.navbar
+{
+    display: flex;
+    justify-content: left;
+    margin-bottom: 20px;
+}
+.menu
+{
+    display: flex;
+}
+
+#gallery p
+{
+    color: #343830;
+    padding-top: 15px;
+    padding-left: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+#carouselExampleFade
+{
+    margin-bottom: 50px;
+}
