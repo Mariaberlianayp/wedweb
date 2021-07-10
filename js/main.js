@@ -1,4 +1,4 @@
-let launchDate = new Date("Aug 7, 2021 10:00:00").getTime();
+let launchDate = new Date("Aug 7, 2021 11:00:00").getTime();
 
 // Setup Timer to tick every 1 second
 let timer = setInterval(tick, 1000);
