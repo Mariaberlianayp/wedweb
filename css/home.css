@@ -399,20 +399,21 @@ a
     font-size: 15px;
     color: #343830;
 }
-.kirimvideo form 
+
+.btnvideo
 {
     display: flex;
     justify-content: center;
     
 }
-
-.kirimvideo input[type=submit]
+.btnvideo a
 {
-   
+    text-align: center;
     padding:10px 0; 
-    background:#f4af9a; 
+    background:#f4af9a;
+    color: #343830; 
+    width: 300px;
     border-radius: 10px; 
-    
 }
 
 .ayat, .penutup
@@ -758,10 +759,10 @@ a
     {
         font-size: 7px;
     }
-    .kirimvideo input
+    .btnvideo a
     {
         font-size: 10px;
-        width: 100px;
+        width: 150px;
     }
     .ayat, .penutup
     {

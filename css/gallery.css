@@ -44,3 +44,27 @@ a
 {
     margin-bottom: 50px;
 }
+
+.mx-auto
+    {
+        width: 1100px;
+    }
+
+
+@media(max-width:1050px)
+{
+    .mx-auto
+    {
+        width: 700px;
+    }
+
+}
+
+@media(max-width:670px)
+{
+    .mx-auto
+    {
+        width: 340px;
+    }
+
+}
