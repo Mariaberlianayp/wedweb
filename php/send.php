@@ -24,8 +24,15 @@ if (isset($_POST['name']) && isset($_POST['message'])) {
 		if ($res) {
 			// echo '<script>alert("Thank you for send a message :)")</script>';
             // header("Location: ../home.html");
+			echo "<script>
+				alert('Ucapan terkirim! Terima kasih! :)');
+				window.location.href='../home.html';
+			</script>";
 		}else {
-			echo "Your message could not be sent!";
+			echo "<script>
+				alert('Maaf, ucapanmu tidak terkirim. Silakan diulangi kembali. Terima kasih.');
+				window.location.href='../home.html';
+			</script>";
 		}
 	}
 
