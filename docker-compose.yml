@@ -3,8 +3,6 @@ services:
     web:
         build: .
         container_name: php
-        volumes: 
-            - volumephp:/var/www/html/
         ports:
             - 80:80
         depends_on: 
@@ -40,7 +38,6 @@ services:
         networks:
             - database    
 volumes: 
-    volumephp:
     volumedb:   
 networks:
     database:
