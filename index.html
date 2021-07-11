@@ -23,11 +23,13 @@
     <div id="gambar">
         <img src="images/1.png" width="400px" height="auto">
     </div>
+    <audio src="audio/audio.mp3" id="audio"></audio>
     
     <div class="btn">
         <button type="button" class="button open">
-            <a href="home.html">Open Invitation</a> 
+            <a onClick="togglePlay()" href="home.html">Open Invitation</a> 
         </button>
+  
     </div>
     
     <div class="content">
@@ -55,6 +57,18 @@
             <!-- 00 : 00 : 00 : 00 -->
         </div>
     </div>
+    <script type="text/javascript">
+        var myAudio = document.getElementsById("audio");
+        var isPlaying = false;
+        function togglePlay()
+        {
+            myAudio.play();
+            terakhir = document.querySelector('#box');
+            terakhir.classList.add('hide');
+        }
+
+    </script>
+      
     <script src="js/main.js"></script>
 </body>
 </html>
