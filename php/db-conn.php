@@ -1,10 +1,10 @@
 <?php  
 
-$sname = "localhost";
-$uname = "maria";
-$password = "maria";
+$sname = getenv('DB_HOST');
+$uname = getenv('DB_USERNAME');
+$password = getenv('DB_PASSWORD');
 
-$db_name = "test2";
+$db_name = getenv('DB_NAME')";
 
 $conn = mysqli_connect($sname, $uname, $password, $db_name);
 
