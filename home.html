@@ -22,10 +22,10 @@
 </head>
 <body>
     <!-- <audio src="audio/audio.mp3" style="display:none;" autoplay></audio> -->
-    <iframe src="audio/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
-    <audio autoplay loop>
+    <!-- <iframe src="audio/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe> -->
+    <!-- <audio autoplay loop>
         <source src="audio/audio.mp3" type="audio/mpeg" />
-    </audio>
+    </audio> -->
     <div class="navbar">
         <div class="bunga">
             <a href="home.html">
@@ -39,6 +39,19 @@
                 </a>   
             </div>
 
+        </div>
+    </div>
+
+    <div id="wrapper">
+        <div id='player'>
+            <audio id="music_player">
+            <source src="audio/audio.mp3"/>
+            </audio>
+            <input type="image" src="images/music/play.png" onclick="play_aud()" id="play_button" >
+            <input type="image" src="images/music/pause.png" onclick="pause_aud()" id="play_button"  >
+            <input type="image" src="images/music/stop.png" onclick="stop_aud()" id="play_button"  >
+            <img src="images/music/sound.png" id="vol_img"  >
+            <input type="range" id="change_vol" onchange="change_vol()" step="1" min="1" max="10" list="custom-list">
         </div>
     </div>
 
@@ -215,6 +228,35 @@
 
         </div>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() { startplayer(); }, false);
+        var player;
+
+        function startplayer() 
+        {
+            player = document.getElementById('music_player');
+            player.controls = false;
+        }
+
+        function play_aud() 
+        {
+            player.play();
+        } 
+        function pause_aud() 
+        {
+            player.pause();
+        }
+        function stop_aud() 
+        {
+            player.pause();
+            player.currentTime = 0;
+        }
+        function change_vol()
+        {
+            player.volume=document.getElementById("change_vol").value;
+        }
+    </script>
 
 </body>
 </html>
