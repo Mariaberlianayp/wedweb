@@ -10,10 +10,20 @@
     <link rel="stylesheet" href="css/count.css" />
     <link href='https://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet'>
     <link rel="stylesheet" href="https://www.w3schools.com/howto/tryit.asp?font=Merriweather">
+
+    <script>
+        window.onload = function() {
+          var context = new AudioContext();
+        }
+    </script>
+
 </head>
 
 <body>
-    <audio src="audio/audio.mp3" style="display:none;" autoplay></audio>
+    <audio autoplay loop>
+        <source src="audio/audio.mp3" type="audio/mpeg" />
+    </audio>
+    
     <div id="judul">
         <p>Angga & Angel</p>
     </div>

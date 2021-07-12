@@ -23,6 +23,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <link rel="stylesheet" href="./css/gallery.css">
 
+    <script>
+      window.onload = function() {
+        var context = new AudioContext();
+      }
+    </script>
+
 </head>
 <style type="text/css">
     .item{
@@ -33,7 +39,10 @@
     }
 </style>
 <body>
-    <audio src="audio/audio.mp3" style="display:none;" autoplay></audio>
+    <audio autoplay loop>
+      <source src="audio/audio.mp3" type="audio/mpeg" />
+    </audio>
+    
     <div class="navbar">
         <div class="bunga">
             <a href="home.html">
