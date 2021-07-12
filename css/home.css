@@ -415,7 +415,13 @@ a
     width: 300px;
     border-radius: 10px; 
 }
-
+.ayat p
+{
+    font-family:Parisienne;
+    text-align: center;
+    font-size: 25px;
+    color: #343830;
+}
 .ayat, .penutup
 {
     margin-top: 50PX;
@@ -763,6 +769,12 @@ a
     {
         font-size: 10px;
         width: 150px;
+    }
+    .ayat p
+    {
+        
+        font-size: 10px;
+       
     }
     .ayat, .penutup
     {
