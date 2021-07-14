@@ -29,52 +29,21 @@ audio
     transform: scale(0.75);
 }
 
-.navbar
+.kiri
 {
     display: flex;
     justify-content: left;
 }
-.menu
+.navbar
 {
     display: flex;
-}
-
-/* music */
-#wrapper
-{
-    text-align:center;
-    margin:0 auto;
-    padding:0px;
-    width:995px;
-    margin-top: 10px;
+    justify-content: space-between;
     
 }
-#player
+#wrapper
 {
-    background-color:#f4af9a;
-    width:500px;
-    margin-left:300px;
-    padding:15px;
-    box-sizing:border-box;
-    display: flex;
-    justify-content: center;
-    border-radius: 50px;
+    margin-top: 30px;
 }
-input[type="image"]
-{
-    float:left;
-    width: 20px;
-    height:auto;
-    margin-left:2px;
-    margin-right:5px;
-    margin-top:55%px;
-}
-#vol_img
-{
-    margin-left:120px;
-    width:30px;
-}
-
 
 #gallery p, #acara p
 {
@@ -644,6 +613,21 @@ input[type="image"]
 
 @media(max-width:670px)
 {
+    .bunga
+    {
+        
+        padding-left: 0px;
+
+    }
+    .menu
+    {
+        margin-left: -20px;
+    }
+    #wrapper
+    {
+        margin-left: -30px;
+    }
+
     .content
     {
         margin: 0px 0px;
