@@ -22,17 +22,34 @@
 </head>
 <body>
     <div class="navbar">
-        <div class="bunga">
-            <a href="home.html">
-                <img src="images/2.png" width="50px" alt="bunga" >
-            </a>
-        </div>
-        <div class="menu">
-            <div id="gallery">
-                <a href="gallery.html">
-                    <p>Gallery</p>
-                </a>   
+        <div class="kiri">
+
+            <div class="bunga">
+                <a href="home.html">
+                    <img src="images/2.png" width="50px" alt="bunga" >
+                </a>
             </div>
+            <div class="menu">
+                <div id="gallery">
+                    <a href="gallery.html">
+                        <p>Gallery</p>
+                    </a>   
+                </div>
+            </div>
+        </div>
+        <div id="wrapper">
+            <audio controls autoplay loop>
+                <source src="audio/audio.mp3" type="audio/mpeg" />
+            </audio>
+            <iframe src="audio/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+            <!-- <audio id="music_player" autoplay loop>
+            <source src="audio/audio.mp3"/>
+            </audio>
+            <input type="image" src="images/music/play.png" onclick="play_aud()" id="play_button" >
+            <input type="image" src="images/music/pause.png" onclick="pause_aud()" id="play_button"  >
+            <input type="image" src="images/music/stop.png" onclick="stop_aud()" id="play_button"  >
+            <img src="images/music/sound.png" id="vol_img"  >
+            <input type="range" id="change_vol" onchange="change_vol()" step="1" min="1" max="10" list="custom-list"> -->
         </div>
     </div>
 
@@ -209,20 +226,7 @@
 
         </div>
     </div>
-    <div id="wrapper">
-        <audio controls autoplay loop>
-            <source src="audio/audio.mp3" type="audio/mpeg" />
-        </audio>
-        <iframe src="audio/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
-        <!-- <audio id="music_player" autoplay loop>
-        <source src="audio/audio.mp3"/>
-        </audio>
-        <input type="image" src="images/music/play.png" onclick="play_aud()" id="play_button" >
-        <input type="image" src="images/music/pause.png" onclick="pause_aud()" id="play_button"  >
-        <input type="image" src="images/music/stop.png" onclick="stop_aud()" id="play_button"  >
-        <img src="images/music/sound.png" id="vol_img"  >
-        <input type="range" id="change_vol" onchange="change_vol()" step="1" min="1" max="10" list="custom-list"> -->
-    </div>
+    
 
     <!-- <script>
         document.addEventListener("DOMContentLoaded", function() { startplayer(); }, false);
