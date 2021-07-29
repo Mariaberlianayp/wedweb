@@ -31,9 +31,10 @@ services:
         image: phpmyadmin/phpmyadmin:5.0.1
         restart: always
         environment:
-            PMA_HOST: mysql-server
-            PMA_USER: "${DB_USERNAME}"
-            PMA_PASSWORD: "${DB_PASSWORD}"
+            PMA_ARBITRARY: 1
+            # PMA_HOST: mysql-server
+            # PMA_USER: "${DB_USERNAME}"
+            # PMA_PASSWORD: "${DB_PASSWORD}"
         ports:
             - "8001:80" #PMA running on host's port 8001
         depends_on: 
